@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-Project</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="game-project.js"></script>
+
+</head>
+
+<body>
+    <div class="instructions">
+        <h2>Let's play Color-Hit</h2>
+        <div class="hidden-answer">
+            <button id="first-hidden-btn" class="black"></button>
+            <button id="second-hidden-btn" class="black"></button>
+            <button id="third-hidden-btn" class="black"></button>
+            <button id="fourth-hidden-btn" class="black"></button>
+        </div>
+        <p>Guess the colors of the four circles hidden above. Each circle has a different color </p>
+    </div>
+    <div class="">
+        <button class="color-btn" id="blue-button" style="background-color: Blue;">blue</button>
+        <button class="color-btn" id="red-button" style="background-color: Red;">red</button>
+        <button class="color-btn" id="green-button" style="background-color: Green;">Green</button>
+        <button class="color-btn" id="plum-button" style="background-color: Plum;">Plum</button>
+        <button class="color-btn" id="yellow-button" style="background-color: yellow;">Yellow</button>
+        <button class="color-btn" id="orange-button" style="background-color: orange;">Orange</button>
+    </div>
+    <ul id="guess-container">
+        <li id="guess-element" class="">
+            <button class="first-guess-btn"></button>
+            <button class="second-guess-btn"></button>
+            <button class="third-guess-btn"></button>
+            <button class="fourth-guess-btn"></button>
+            <div id="result-bar"></div>
+        </li>
+    </ul>
+    <button id="submit-btn">SUBMIT ANSWER</button>
+    <button id="restart-btn" class="hide" onClick="window.location.reload();">PLAY AGAIN</button>
+
+</body>
+
+</html>
